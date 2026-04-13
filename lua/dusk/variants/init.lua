@@ -34,8 +34,8 @@ M.base = {
   yellow     = "#e6c384",
   green      = "#8dba8d",
   green_dim  = "#6fa68d",
-  orange     = "#e8956a",   -- bright orange: constants
-  peach      = "#dba882",   -- warm peach: types
+  orange     = "#ed9d82",
+  peach      = "#edb082",
   teal       = "#7dcfff",
   blue       = "#79c0ff",
 
