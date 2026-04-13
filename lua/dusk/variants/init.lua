@@ -109,12 +109,12 @@ end
 -- Applied after resolution so aliases always point at the final values.
 function M.with_aliases(c)
   c.keyword  = c.red
-  c.func     = c.yellow     -- yellow for functions
-  c.type_hl  = c.peach      -- warm peach for types
+  c.func     = c.yellow
+  c.type_hl  = c.peach
   c.string   = c.green
   c.str_esc  = c.green_dim
   c.comment  = c.fg_subtle
-  c.constant = c.orange     -- bright orange for constants
+  c.constant = c.red
   c.builtin  = c.teal
   c.text     = c.fg
   c.op       = c.fg_muted
