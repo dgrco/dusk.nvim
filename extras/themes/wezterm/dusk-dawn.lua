@@ -31,7 +31,7 @@ return {
     "#526070",  -- bright black
     "#e57068",  -- bright red
     "#8dba8d",  -- bright green
-    "#c9956a",  -- bright yellow
+    "#e8956a",  -- bright yellow
     "#79c0ff",  -- bright blue
     "#d2a8ff",  -- bright magenta
     "#7dcfff",  -- bright cyan
