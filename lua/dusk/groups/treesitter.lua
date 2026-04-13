@@ -58,10 +58,10 @@ function M.get(c)
     -- ─── Types ────────────────────────────────────────────────────────────────
     -- Types are yellow — clearly distinct from plain text, without being loud.
     -- type Name struct → 'type' is red (keyword), 'Name' is yellow, 'struct' is red (keyword)
-    ["@type"]                      = { fg = c.func },       -- MyStruct, int, string — yellow
-    ["@type.builtin"]              = { fg = c.func },       -- int, bool, string, error — yellow
-    ["@type.definition"]           = { fg = c.func },       -- the name in a type definition
-    ["@type.qualifier"]            = { fg = c.keyword },    -- const, mut, pub
+    ["@type"]                      = { fg = c.type_hl },   -- warm peach
+    ["@type.builtin"]              = { fg = c.type_hl },   -- int, bool, string, error
+    ["@type.definition"]           = { fg = c.type_hl },   -- the name in a type definition
+    ["@type.qualifier"]            = { fg = c.keyword },   -- const, mut, pub
 
     -- ─── Attributes / decorators ──────────────────────────────────────────────
     ["@attribute"]                 = { fg = c.yellow },

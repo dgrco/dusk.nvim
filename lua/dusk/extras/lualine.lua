@@ -13,7 +13,7 @@ local c = require("dusk.palette").colors
 local dusk = {}
 
 dusk.normal = {
-  a = { fg = c.bg,        bg = c.yellow, gui = "bold" },
+  a = { fg = c.bg,        bg = c.yellow, gui = "bold" },  -- yellow pill
   b = { fg = c.fg_muted,  bg = c.bg3 },
   c = { fg = c.fg_subtle, bg = c.bg3 },
 }
@@ -25,7 +25,7 @@ dusk.insert = {
 }
 
 dusk.visual = {
-  a = { fg = c.bg,        bg = c.orange, gui = "bold" },
+  a = { fg = c.bg,        bg = c.orange, gui = "bold" },  -- orange pill
   b = { fg = c.fg_muted,  bg = c.bg3 },
   c = { fg = c.fg_subtle, bg = c.bg3 },
 }

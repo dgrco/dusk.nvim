@@ -112,10 +112,10 @@ function M.get(c)
     Macro           = { fg = c.keyword },
     PreCondit       = { fg = c.keyword },
 
-    Type            = { fg = c.func },     -- int, string, MyStruct — yellow, distinct from plain text
+    Type            = { fg = c.type_hl },  -- warm peach: distinct from text, not loud
     StorageClass    = { fg = c.keyword },
     Structure       = { fg = c.keyword },
-    Typedef         = { fg = c.func },     -- the name in a typedef — yellow
+    Typedef         = { fg = c.type_hl },
 
     Special         = { fg = c.builtin },
     SpecialChar     = { fg = c.blue },

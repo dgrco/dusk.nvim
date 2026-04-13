@@ -34,7 +34,8 @@ M.base = {
   yellow     = "#e6c384",
   green      = "#8dba8d",
   green_dim  = "#6fa68d",
-  orange     = "#c9956a",   -- softened: less saturated, warmer amber rather than vivid orange
+  orange     = "#e8956a",   -- bright orange: constants
+  peach      = "#dba882",   -- warm peach: types
   teal       = "#7dcfff",
   blue       = "#79c0ff",
 
@@ -108,11 +109,12 @@ end
 -- Applied after resolution so aliases always point at the final values.
 function M.with_aliases(c)
   c.keyword  = c.red
-  c.func     = c.yellow
+  c.func     = c.yellow     -- yellow for functions
+  c.type_hl  = c.peach      -- warm peach for types
   c.string   = c.green
   c.str_esc  = c.green_dim
   c.comment  = c.fg_subtle
-  c.constant = c.orange
+  c.constant = c.orange     -- bright orange for constants
   c.builtin  = c.teal
   c.text     = c.fg
   c.op       = c.fg_muted

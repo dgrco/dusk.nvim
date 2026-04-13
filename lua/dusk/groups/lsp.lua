@@ -44,13 +44,13 @@ function M.get(c)
     LspCodeLens                 = { fg = c.fg_subtle },
 
     -- ─── Semantic tokens ──────────────────────────────────────────────────────
-    -- Types → yellow (c.func). Names/vars → text. Keywords → red. Functions → yellow.
-    ["@lsp.type.class"]            = { fg = c.func },    -- yellow: user-defined types
+    -- Types → peach. Functions → yellow. Constants → orange. Keywords → red.
+    ["@lsp.type.class"]            = { fg = c.type_hl },
     ["@lsp.type.decorator"]        = { fg = c.yellow },
-    ["@lsp.type.enum"]             = { fg = c.func },    -- yellow: enum types
+    ["@lsp.type.enum"]             = { fg = c.type_hl },
     ["@lsp.type.enumMember"]       = { fg = c.constant },
     ["@lsp.type.function"]         = { fg = c.func },
-    ["@lsp.type.interface"]        = { fg = c.func },    -- yellow: interfaces are types
+    ["@lsp.type.interface"]        = { fg = c.type_hl },
     ["@lsp.type.keyword"]          = { fg = c.keyword },
     ["@lsp.type.macro"]            = { fg = c.func },
     ["@lsp.type.method"]           = { fg = c.func },
@@ -62,18 +62,18 @@ function M.get(c)
     ["@lsp.type.property"]         = { fg = c.text },
     ["@lsp.type.regexp"]           = { fg = c.blue },
     ["@lsp.type.string"]           = { fg = c.string },
-    ["@lsp.type.struct"]           = { fg = c.func },    -- yellow: structs are types
-    ["@lsp.type.type"]             = { fg = c.func },    -- yellow
-    ["@lsp.type.typeParameter"]    = { fg = c.func },    -- yellow: generic type params
+    ["@lsp.type.struct"]           = { fg = c.type_hl },
+    ["@lsp.type.type"]             = { fg = c.type_hl },
+    ["@lsp.type.typeParameter"]    = { fg = c.type_hl },
     ["@lsp.type.variable"]         = { fg = c.text },
 
-    -- Modifiers (override type colors with modifiers)
+    -- Modifiers
     ["@lsp.typemod.function.defaultLibrary"]  = { fg = c.builtin },
     ["@lsp.typemod.variable.defaultLibrary"]  = { fg = c.builtin },
     ["@lsp.typemod.variable.globalScope"]     = { fg = c.text },
     ["@lsp.typemod.variable.readonly"]        = { fg = c.constant },
-    ["@lsp.typemod.class.defaultLibrary"]     = { fg = c.func },
-    ["@lsp.typemod.type.defaultLibrary"]      = { fg = c.func },
+    ["@lsp.typemod.class.defaultLibrary"]     = { fg = c.type_hl },
+    ["@lsp.typemod.type.defaultLibrary"]      = { fg = c.type_hl },
     ["@lsp.typemod.enumMember.defaultLibrary"]= { fg = c.constant },
   }
 end
