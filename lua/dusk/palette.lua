@@ -11,11 +11,11 @@ local variants = require("dusk.variants")
 local M = {}
 
 -- Default colors: the "dusk" variant with aliases applied.
-M.colors = variants.with_aliases(variants.resolve("dusk"))
+M.colors = variants.with_aliases(variants.resolve("dusk"), "dusk")
 
 -- Resolve any variant by name (used by init.lua and the generator).
 function M.get(name)
-  return variants.with_aliases(variants.resolve(name or "dusk"))
+  return variants.with_aliases(variants.resolve(name or "dusk"), name or "dusk")
 end
 
 return M

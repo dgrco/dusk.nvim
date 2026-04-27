@@ -95,6 +95,44 @@ M.variants = {
 
     red        = "#e57068",   -- softer red: same family, slightly less aggressive on the lighter bg
   },
+
+
+  ["dusk-break"] = {
+    bg         = "#262427",
+    bg1        = "#2c2a2e",
+    bg2        = "#323036",
+    bg3        = "#38363d",
+    bg_popup   = "#2c2a2e",
+
+    sel_bg     = "#3a3f46",
+    sel_fg     = "#f0ece0",
+
+    border     = "#403d44",
+    border_hi  = "#58535c",
+
+    fg         = "#f0ece0",
+    fg_muted   = "#a29aa4",
+    fg_subtle  = "#6c6670",
+    fg_dark    = "#8b8490",
+
+    red        = "#e57068",
+
+    yellow     = "#f6c177",
+    green      = "#8fbf8f",
+    green_dim  = "#739f88",
+    orange     = "#d4956a",
+    peach      = "#c4a882",
+    teal       = "#79c2cc",
+    blue       = "#7da6d1",
+
+    warn       = "#f6c177",
+    info       = "#7da6d1",
+    hint       = "#a29aa4",
+
+    git_add    = "#6fbf73",
+    git_del    = "#e57068",
+    git_change = "#cfae6b",
+  },
 }
 
 -- ─── Resolve a variant to its full color table ────────────────────────────────
@@ -107,17 +145,23 @@ end
 
 -- ─── Semantic aliases ─────────────────────────────────────────────────────────
 -- Applied after resolution so aliases always point at the final values.
-function M.with_aliases(c)
+function M.with_aliases(c, name)
   c.keyword  = c.red
   c.func     = c.yellow
   c.type_hl  = c.peach
   c.string   = c.green
   c.str_esc  = c.green_dim
   c.comment  = c.fg_subtle
-  c.constant = c.red
+  c.constant = c.orange
   c.builtin  = c.teal
   c.text     = c.fg
   c.op       = c.fg_muted
+
+  if name == "dusk-break" then
+    c.string = c.yellow
+    c.func   = c.green
+  end
+
   return c
 end
 

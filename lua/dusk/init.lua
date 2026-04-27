@@ -69,7 +69,7 @@ function M.load(variant)
     c = vim.tbl_extend("force", c, M.config.color_overrides)
     -- Re-apply aliases so semantic keys (c.keyword, etc.) reflect any overridden raws
     local variants = require("dusk.variants")
-    c = variants.with_aliases(c)
+    c = variants.with_aliases(c, chosen)
   end
 
   -- Apply transparency
