@@ -16,7 +16,7 @@ A restrained dark theme for Neovim. Warm text, purposeful color.
 **lazy.nvim**
 ```lua
 {
-  "yourname/dusk.nvim",
+  "dgrco/dusk.nvim",
   priority = 1000,
   config = function()
     require("dusk").setup({
@@ -30,7 +30,7 @@ A restrained dark theme for Neovim. Warm text, purposeful color.
 **packer.nvim**
 ```lua
 use {
-  "yourname/dusk.nvim",
+  "dgrco/dusk.nvim",
   config = function()
     require("dusk").setup({})
     vim.cmd("colorscheme dusk")
