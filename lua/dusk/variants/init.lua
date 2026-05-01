@@ -121,7 +121,7 @@ M.variants = {
     green      = "#8fbf8f",
     green_dim  = "#739f88",
     orange     = "#d4956a",
-    peach      = "#c4a882",
+    peach      = "#d4b579",
     teal       = "#79c2cc",
     blue       = "#7da6d1",
 
