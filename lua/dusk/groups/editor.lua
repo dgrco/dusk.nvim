@@ -50,13 +50,13 @@ function M.get(c)
     FoldColumn      = { fg = c.fg_subtle, bg = c.bg },
 
     -- Popup menu
-    Pmenu           = { fg = c.fg,        bg = c.bg_popup },
+    Pmenu           = { fg = c.fg,        bg = c.bg },
     PmenuSel        = { fg = c.fg,        bg = c.bg2, bold = true },
     PmenuSbar       = { bg = c.bg3 },
     PmenuThumb      = { bg = c.border },
-    PmenuKind       = { fg = c.yellow,    bg = c.bg_popup },
+    PmenuKind       = { fg = c.yellow,    bg = c.bg },
     PmenuKindSel    = { fg = c.yellow,    bg = c.bg2 },
-    PmenuExtra      = { fg = c.fg_muted,  bg = c.bg_popup },
+    PmenuExtra      = { fg = c.fg_muted,  bg = c.bg },
     PmenuExtraSel   = { fg = c.fg_muted,  bg = c.bg2 },
 
     -- Messages
