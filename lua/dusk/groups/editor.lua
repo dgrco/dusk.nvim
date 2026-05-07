@@ -7,10 +7,10 @@ function M.get(c)
   return {
     -- ─── Editor chrome ────────────────────────────────────────────────────────
     Normal          = { fg = c.fg,        bg = c.bg },
-    NormalFloat     = { fg = c.fg,        bg = c.bg },
-    NormalNC        = { fg = c.fg_muted,  bg = c.bg3 },
-    FloatBorder     = { fg = c.border_hi, bg = c.bg },
-    FloatTitle      = { fg = c.yellow,    bg = c.bg },
+    NormalFloat     = { fg = c.fg,        bg = c.bg_popup },
+    NormalNC        = { fg = c.fg_muted,  bg = c.bg },
+    FloatBorder     = { fg = c.border_hi, bg = c.bg_popup },
+    FloatTitle      = { fg = c.yellow,    bg = c.bg_popup },
 
     -- Cursor
     Cursor          = { fg = c.bg,        bg = c.fg },
@@ -50,13 +50,13 @@ function M.get(c)
     FoldColumn      = { fg = c.fg_subtle, bg = c.bg },
 
     -- Popup menu
-    Pmenu           = { fg = c.fg,        bg = c.bg },
+    Pmenu           = { fg = c.fg,        bg = c.bg_popup },
     PmenuSel        = { fg = c.fg,        bg = c.bg2, bold = true },
     PmenuSbar       = { bg = c.bg3 },
     PmenuThumb      = { bg = c.border },
-    PmenuKind       = { fg = c.yellow,    bg = c.bg },
+    PmenuKind       = { fg = c.yellow,    bg = c.bg_popup },
     PmenuKindSel    = { fg = c.yellow,    bg = c.bg2 },
-    PmenuExtra      = { fg = c.fg_muted,  bg = c.bg },
+    PmenuExtra      = { fg = c.fg_muted,  bg = c.bg_popup },
     PmenuExtraSel   = { fg = c.fg_muted,  bg = c.bg2 },
 
     -- Messages
