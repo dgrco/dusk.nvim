@@ -5,12 +5,12 @@
 #   import = ["~/.config/alacritty/themes/dusk-break.toml"]
 
 [colors.primary]
-background = "#262427"
+background = "#18181a"
 foreground = "#f0ece0"
 
 [colors.cursor]
 cursor = "#f0ece0"
-text   = "#262427"
+text   = "#18181a"
 
 [colors.selection]
 background = "#3a3f46"

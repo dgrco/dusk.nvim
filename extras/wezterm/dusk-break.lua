@@ -6,11 +6,11 @@
 --   config.colors = dusk
 
 return {
-  background    = "#262427",
+  background    = "#18181a",
   foreground    = "#f0ece0",
 
   cursor_bg     = "#f0ece0",
-  cursor_fg     = "#262427",
+  cursor_fg     = "#18181a",
   cursor_border = "#f0ece0",
 
   selection_bg  = "#3a3f46",
