@@ -99,7 +99,7 @@ M.variants = {
 
   ["dusk-break"] = {
     bg         = "#18181a",
-    bg1        = "#2c2a2e",
+    bg1        = "#202022",
     bg2        = "#323036",
     bg3        = "#38363d",
     bg_popup   = "#2c2a2e",
