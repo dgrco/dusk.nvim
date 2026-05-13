@@ -104,7 +104,7 @@ M.variants = {
     bg3        = "#38363d",
     bg_popup   = "#2c2a2e",
 
-    sel_bg     = "#252e36",
+    sel_bg     = "#374552",
     sel_fg     = "#f0ece0",
 
     border     = "#403d44",
